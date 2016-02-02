@@ -1,0 +1,11 @@
+<!-- Template for admin site header -->
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<img src="http://www.stuartxchange.org/ArtGalleryJeepney7.jpg" width=100px style="float:left">
+<h1 id="site-name" style="float:left"><a href="{% url 'admin:index' %}">Pinoy Trips</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

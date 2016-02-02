@@ -1,0 +1,10 @@
+<h1>List of all operators</h1>
+{% if list_of_all_operators %}
+    <ul>
+    {% for operator in list_of_all_operators %}
+        <li><a href="{% url 'operators:detail' operator.id %}">{{ operator.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No operators are available.</p>
+{% endif %}
